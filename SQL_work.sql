@@ -118,27 +118,9 @@ select*from works_on;
 -- Write a query to list the name of employees who stay in a city whose first letter is ‘M’.
 select emp_name from employee1 where address like 'M%';
 
--- Write a query that shows project name and total number of employee in each project with the alias “PROJECT NAME” , “NUMBER OF EMPLOYEE”.
-
-
-
 -- Find the names of employees that are directly supervised by ‘Myat Min’.
 select emp_name from employee1 where superssn = 111;
 
--- Write a query that shows name, project name and total number of hours working on projects of employees.
-
-
--- Write a query to display sum of salaries based on project ? 
-
-
--- Write a query that displays the project name and his name whose SSN is 113.
-
-
-
--- Q2)Create a view called projecinfo which displays the name and hours of each employee who are working in project 1.
-
-
--- Q3)Create after delete trigger to save the deleted employee information from employee table to old_employee table (create old_employee)
 
 create table old_employee
 (name varchar(15),ssn int primary key,
@@ -157,11 +139,6 @@ select * from employee1;
 delete from employee1 where ssn=115;
 select * from employee1;
 select * from old_employee;
-
--- Q4)Write a stored function to return the sum of salary of employees who are working in project x. Project number is given by the function’s parameter. 
-
-
--- Q5)Write a stored procedure to Handle Duplicate Key exception when trying to insert Duplicate records ?
 
 
 
